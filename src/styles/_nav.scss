@@ -1,0 +1,87 @@
+@import "./variables";
+
+.Nav {
+  background-color: $color-black;
+
+  &__container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  &__left {
+  }
+
+  &__right {
+    width: 11rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 900px) {
+      width: fit-content;
+    }
+  }
+
+  &__button1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    border-radius: 1.5rem;
+    padding: 0.8rem 1.2rem;
+    white-space: nowrap;
+    background-color: $color-blue;
+    color: $color-black;
+
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  &__button2 {
+    text-align: center;
+    height: 2.6rem;
+    width: 2.6rem;
+    border-radius: 50%;
+    border: none;
+    background-color: $color-primary;
+    white-space: nowrap;
+  }
+
+  &__buttoninside {
+    position: relative;
+
+    &,
+    &::before,
+    &::after {
+      width: 1.5rem;
+      height: 2px;
+      background-color: $color-black;
+      display: inline-block;
+    }
+
+    & {
+      top: -0.2rem;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+
+    &::before {
+      top: -0.5rem;
+    }
+
+    &::after {
+      top: 0.5rem;
+    }
+  }
+}

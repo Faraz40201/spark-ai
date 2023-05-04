@@ -1,0 +1,271 @@
+@import "./variables";
+
+.Header {
+  background-color: $color-black;
+  width: 100%;
+
+  &__upper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+
+    @media (max-width: 900px) {
+      padding-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 600px) {
+      padding: 2rem;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: $large-font-size;
+    font-weight: 600;
+    color: $color-white;
+
+    @media (max-width: 900px) {
+      font-size: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__primary {
+    color: $color-primary;
+  }
+
+  &__middle {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0rem;
+    overflow: hidden;
+  }
+
+  &__image1 {
+    width: 16rem;
+    height: 20rem;
+    padding-right: 1rem;
+
+    @media (max-width: 900px) {
+      width: 13rem;
+      height: 17rem;
+      padding-right: 0.5rem;
+    }
+
+    @media (max-width: 550px) {
+      width: 10rem;
+      height: 14rem;
+      padding-right: 0.5rem;
+    }
+  }
+
+  &__image2 {
+    width: 16rem;
+    height: 27rem;
+    padding-right: 1rem;
+
+    @media (max-width: 900px) {
+      width: 13rem;
+      height: 23rem;
+      padding-right: 0.5rem;
+    }
+
+    @media (max-width: 550px) {
+      width: 10rem;
+      height: 20rem;
+      padding-right: 0.5rem;
+    }
+  }
+
+  &__image3 {
+    width: 16rem;
+    height: 20rem;
+    padding-right: 1rem;
+
+    @media (max-width: 900px) {
+      width: 12rem;
+      height: 16rem;
+      padding-right: 0.5rem;
+    }
+
+    @media (max-width: 550px) {
+      width: 9rem;
+      height: 13rem;
+      padding-right: 0.5rem;
+    }
+  }
+
+  &__image4 {
+    height: 16rem;
+    width: 18rem;
+    padding-right: 1rem;
+
+    @media (max-width: 900px) {
+      width: 11rem;
+      height: 15rem;
+      padding-right: 0.5rem;
+    }
+
+    @media (max-width: 650px) {
+      display: none;
+    }
+
+    @media (max-width: 550px) {
+      width: 10rem;
+      height: 12rem;
+      display: none;
+    }
+  }
+
+  &__image5 {
+    width: 10rem;
+    height: 20rem;
+
+    @media (max-width: 900px) {
+      width: 5rem;
+      height: 17rem;
+      padding-right: 0.5rem;
+    }
+
+    @media (max-width: 650px) {
+      display: none;
+    }
+
+    @media (max-width: 550px) {
+      width: 4rem;
+      height: 13rem;
+      display: none;
+    }
+  }
+
+  &__bottom {
+    background-color: $color-black;
+    width: 100%;
+
+    @media (max-width: 900px) {
+      padding-top: 1rem;
+    }
+  }
+
+  &__container2 {
+    display: flex;
+    max-width: 950px;
+    margin: 0 auto;
+    gap: 1rem;
+
+    @media (max-width: 900px) {
+      justify-content: center;
+      max-width: fit-content;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 600px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__process1 {
+    max-width: 21rem;
+    border-bottom: 0.4rem solid transparent;
+
+    @media (man-width: 600px) {
+      max-width: fit-content;
+    }
+
+    @media (max-width: 900px) {
+      padding-left: 1rem;
+      max-width: 20rem;
+    }
+  }
+
+  &__process2 {
+    max-width: 21rem;
+    border-bottom: 0.4rem solid transparent;
+
+    @media (max-width: 900px) {
+      max-width: 20rem;
+    }
+
+    @media (max-width: 600px) {
+      max-width: fit-content;
+    }
+  }
+
+  &__process3 {
+    max-width: 21rem;
+    border-bottom: 0.4rem solid transparent;
+
+    @media (max-width: 900px) {
+      max-width: 20rem;
+    }
+
+    @media (max-width: 600px) {
+      max-width: fit-content;
+    }
+  }
+
+  &__process1:hover {
+    border-bottom: 0.4rem solid $color-primary;
+  }
+
+  &__process2:hover {
+    border-bottom: 0.4rem solid $color-primary;
+  }
+
+  &__process3:hover {
+    border-bottom: 0.4rem solid $color-primary;
+  }
+
+  &__explore {
+    width: 16rem;
+    height: 5rem;
+    color: $color-white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: $default-font-size;
+    padding: 1rem 0rem;
+    line-height: 1.5rem;
+  }
+
+  &__description {
+    color: $color-white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 1rem;
+
+    @media (max-width: 600px) {
+      max-width: 18rem;
+    }
+  }
+
+  &__vector {
+    max-height: 2.5rem;
+    max-width: 2.5rem;
+  }
+
+  &__button {
+    display: flex;
+    cursor: pointer;
+    border: none;
+    color: $color-primary;
+    background-color: transparent;
+    padding: 1.5rem 0rem;
+  }
+
+  &__arrow {
+    padding-left: 0.4rem;
+    padding-top: 0.1rem;
+  }
+}

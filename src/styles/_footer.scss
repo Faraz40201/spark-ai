@@ -1,0 +1,104 @@
+@import "./variables";
+
+.Footer {
+  background-color: $color-black;
+
+  &__container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &__upper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2.5rem 3.5rem;
+
+    @media (max-width: 900px) {
+      max-width: fit-content;
+      gap: 2rem;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    width: 16rem;
+    color: $color-white;
+    white-space: nowrap;
+
+    @media (max-width: 900px) {
+      max-width: 14rem;
+      gap: 0.4rem;
+    }
+
+    @media (max-width: 600px) {
+      max-width: fit-content;
+      gap: 0.2rem;
+    }
+  }
+
+  &__vector {
+    max-width: 2rem;
+    max-height: 2rem;
+  }
+
+  &__description {
+    color: $color-white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 2rem;
+  }
+
+  &__copyright {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  &__middle {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0rem 2rem;
+  }
+
+  &__copyright {
+    font-family: "Montserrat", sans-serif;
+    color: $color-white;
+    font-weight: 300;
+    font-size: 0.8rem;
+  }
+
+  &__logo {
+    max-width: 1rem;
+    max-height: 1rem;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid $color-white;
+    padding: 2.5rem 0rem 1.5rem;
+
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  }
+
+  &__logos {
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 900px) {
+      max-width: 8rem;
+    }
+  }
+}

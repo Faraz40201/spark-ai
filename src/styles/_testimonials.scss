@@ -1,0 +1,176 @@
+@import "./variables";
+
+.Testimonials {
+  background-color: $color-black;
+
+  &__container {
+    max-width: 900px;
+    margin: 0 auto;
+
+    @media (max-width: 900px) {
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 0rem 1rem;
+
+    @media (max-width: 900px) {
+      min-width: fit-content;
+      align-items: center;
+    }
+
+    @media (max-width: 600px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__title {
+    font-family: "Montserrat", sans-serif;
+    width: 13rem;
+    font-weight: 500;
+    color: $color-white;
+    font-size: 2rem;
+    line-height: 3rem;
+
+    @media (max-width: 900px) {
+      width: 10rem;
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 600px) {
+      width: fit-content;
+    }
+  }
+
+  &__description {
+    font-family: "Montserrat", sans-serif;
+    font-size: $default-font-size;
+    font-weight: 300;
+    color: $color-secondary;
+    line-height: 1.6rem;
+    max-width: 35rem;
+
+    @media (max-width: 900px) {
+      max-width: 25rem;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      max-width: fit-content;
+      font-size: 0.8rem;
+    }
+  }
+
+  &__middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem;
+
+    @media (max-width: 900px) {
+      min-width: fit-content;
+      align-items: center;
+    }
+
+    @media (max-width: 600px) {
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  }
+
+  &__image {
+    max-width: 13rem;
+    max-height: 13rem;
+
+    @media (max-width: 900px) {
+      max-width: 10rem;
+      max-height: 10rem;
+    }
+
+    @media (max-width: 600px) {
+      max-width: 10rem;
+      max-height: 10rem;
+    }
+  }
+
+  &__message {
+    max-width: 35rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    color: $color-white;
+    font-weight: 300;
+    line-height: 2rem;
+
+    @media (max-width: 900px) {
+      max-width: 25rem;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      max-width: fit-content;
+      font-size: 0.8rem;
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 600px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__detail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-family: "Montserrat", sans-serif;
+    color: $color-white;
+  }
+
+  &__jobtitle {
+    font-family: "Montserrat", sans-serif;
+    color: $color-white;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+  }
+
+  &__buttons {
+    display: flex;
+    width: 5rem;
+    justify-content: space-between;
+  }
+
+  &__button {
+    background-color: transparent;
+  }
+
+  &__checkboxes {
+    display: flex;
+    flex-direction: row;
+    width: 9rem;
+    justify-content: space-between;
+  }
+
+  &__checkbox input[type="radio"]:checked::after {
+    color: $color-primary;
+  }
+}
