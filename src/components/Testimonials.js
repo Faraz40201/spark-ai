@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import image1 from "./../utilities/testimonialimage.png";
 import forwardbutton from "./../utilities/testimonialforwardbutton.svg";
 import backbutton from "./../utilities/testimonialbackbutton.svg";
+import background from "./../utilities/testimonialbackground.jpg";
 
 const testimonialData = [
   {
@@ -63,6 +64,7 @@ function Testimonials() {
   return (
     <div className="Testimonials">
       <div className="Testimonials__container">
+        <img src={background} alt="" className="Testimonials__background" />
         <div className="Testimonials__header">
           <h3 className="Testimonials__title"> Partner Testimonials</h3>
           <p className="Testimonials__description">
@@ -73,7 +75,7 @@ function Testimonials() {
         </div>
         <div className="Testimonials__middle" key={testimonial.id}>
           <img src={testimonial.img} alt="" className="Testimonials__image" />
-          <p className="Testimonials__message">{testimonial.message}</p>
+          <p className="Testimonials__message">“{testimonial.message}”</p>
         </div>
         <div className="Testimonials__details">
           <div className="Testimonials__detail">

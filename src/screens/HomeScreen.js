@@ -14,9 +14,11 @@ import Footer from "../components/Footer";
 function HomeScreen() {
   return (
     <div className="HomeScreen">
-      <Contact />
-      <Nav />
-      <Header />
+      <div className="HomeScreen__background">
+        <Contact />
+        <Nav />
+        <Header />
+      </div>
       <Details />
       <About />
       <Goods />

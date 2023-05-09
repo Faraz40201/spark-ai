@@ -6,20 +6,27 @@
     margin: 0 auto;
 
     @media (max-width: 600px) {
+      justify-content: center;
       flex-wrap: wrap;
     }
   }
 
   &__section {
+    display: flex;
+    flex-direction: column;
     padding: 2rem 1rem;
+    width: 15rem;
+    align-items: center;
 
     @media (max-width: 900px) {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      width: 9rem;
     }
 
     @media (max-width: 600px) {
+      width: 5rem;
+      padding: 0rem 0.5rem;
     }
   }
 
@@ -36,7 +43,7 @@
     }
 
     @media (max-width: 600px) {
-      font-size: 1rem;
+      font-size: 0.8rem;
       line-height: 3.5rem;
     }
   }
@@ -56,7 +63,7 @@
     }
 
     @media (max-width: 600px) {
-      font-size: 0.8rem;
+      font-size: 0.5rem;
     }
   }
 }

@@ -1,7 +1,7 @@
 @import "./variables";
 
 .Nav {
-  background-color: $color-black;
+  background-color: transparent;
 
   &__container {
     max-width: 1100px;
@@ -9,10 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
-  }
-
-  &__left {
+    padding: 1rem 2.2rem ;
   }
 
   &__right {

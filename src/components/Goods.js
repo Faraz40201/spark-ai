@@ -77,6 +77,7 @@ function Goods() {
           stories here. Make your business grow with Websites.
         </p>
       </div>
+
       <div className="Goods__container">
         {visibleGoods.map((good) => (
           <div className="Goods__item" key={good.id}>

@@ -1,7 +1,7 @@
 @import "./variables";
 
 .Contact {
-  background-color: $color-black;
+  background-color: transparent;
   border-bottom: 1px solid rgb(255, 255, 255, 0.3);
 
   &__container {
@@ -10,19 +10,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0rem 1rem;
 
     @media (max-width: 600px) {
-      padding: 1rem 0rem;
     }
   }
 
   &__email {
+    background-color: $color-black;
     width: 18rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: $color-white;
     white-space: nowrap;
+    padding: 1rem 0rem;
 
     &_logo {
       max-height: 1.5rem;
@@ -37,6 +39,7 @@
   }
 
   &__logos {
+    background-color: $color-black;
     width: 15rem;
     padding: 1rem 0rem;
     display: flex;

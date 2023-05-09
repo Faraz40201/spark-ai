@@ -1,6 +1,8 @@
 @import "./variables";
 
 .Testimonials {
+  position: relative;
+  z-index: 1;
   background-color: $color-black;
 
   &__container {
@@ -8,7 +10,20 @@
     margin: 0 auto;
 
     @media (max-width: 900px) {
+      padding: 0rem 2rem;
     }
+
+    @media (max-width: 600px) {
+      padding: 0rem 1rem;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    height: 34rem;
+    max-width: 900px;
   }
 
   &__header {
@@ -51,7 +66,7 @@
     font-size: $default-font-size;
     font-weight: 300;
     color: $color-secondary;
-    line-height: 1.6rem;
+    line-height: 1.4rem;
     max-width: 35rem;
 
     @media (max-width: 900px) {
@@ -88,27 +103,28 @@
     max-height: 13rem;
 
     @media (max-width: 900px) {
-      max-width: 10rem;
-      max-height: 10rem;
+      max-width: 8rem;
+      max-height: 8rem;
     }
 
     @media (max-width: 600px) {
-      max-width: 10rem;
-      max-height: 10rem;
+      max-width: 7rem;
+      max-height: 7rem;
     }
   }
 
   &__message {
     max-width: 35rem;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: $color-white;
     font-weight: 300;
     line-height: 2rem;
 
     @media (max-width: 900px) {
       max-width: 25rem;
-      font-size: 1rem;
+      line-height: 1.5rem;
+      padding: 1rem 0rem;
     }
 
     @media (max-width: 600px) {
@@ -123,22 +139,34 @@
     justify-content: flex-end;
 
     @media (max-width: 900px) {
+      align-self: flex-end;
       flex-wrap: wrap;
     }
 
     @media (max-width: 600px) {
       flex-wrap: wrap;
+      align-self: flex-start;
     }
   }
 
   &__detail {
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 900px) {
+      width: fit-content;
+    }
+
+    @media (max-width: 600px) {
+      width: 13rem;
+    }
   }
 
   &__name {
     font-family: "Montserrat", sans-serif;
     color: $color-white;
+    font-weight: 600;
+    padding: 1rem 0rem;
   }
 
   &__jobtitle {
@@ -161,6 +189,7 @@
 
   &__button {
     background-color: transparent;
+    border: none;
   }
 
   &__checkboxes {
@@ -170,7 +199,21 @@
     justify-content: space-between;
   }
 
-  &__checkbox input[type="radio"]:checked::after {
-    color: $color-primary;
+  .Testimonials__radio[type="radio"] {
+    appearance: none; 
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  &__radio[type="radio"]:checked {
+    outline: 2px solid $color-secondary;
+    background-color: $color-primary;
   }
 }
+
+
+
+

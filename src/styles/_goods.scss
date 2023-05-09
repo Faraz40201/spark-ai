@@ -20,11 +20,6 @@
     max-width: 40rem;
     padding-top: 2rem;
 
-    @media (max-width: 00px) {
-      width: 15rem;
-      justify-content: center;
-    }
-
     @media (max-width: 600px) {
       width: 15rem;
       justify-content: center;
@@ -71,6 +66,7 @@
   }
 
   &__container {
+    padding: 0rem 2rem;
     display: flex;
     flex-wrap: wrap;
     // gap: 1rem;
@@ -157,7 +153,7 @@
     font-weight: 500;
     width: 11rem;
     min-height: 3rem;
-    margin: 3rem 0rem;
+    margin: 3rem 0rem 3rem 2rem;
     cursor: pointer;
     border: none;
     text-align: center;
@@ -166,5 +162,9 @@
     white-space: nowrap;
     background-color: $color-blue;
     color: $color-black;
+
+    @media (max-width: 900px) {
+      margin: 3rem 0rem;
+    }
   }
 }

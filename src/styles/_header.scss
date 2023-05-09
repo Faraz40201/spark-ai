@@ -1,7 +1,7 @@
 @import "./variables";
 
 .Header {
-  background-color: $color-black;
+  background-color: transparent;
   width: 100%;
 
   &__upper {
@@ -47,221 +47,108 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 5rem 0rem;
     overflow: hidden;
-  }
+    gap: 1rem;
+    padding-top: 4rem;
+   }
+ 
+  &__images {
 
-  &__image1 {
-    width: 16rem;
-    height: 20rem;
-    padding-right: 1rem;
-
-    @media (max-width: 900px) {
-      width: 13rem;
-      height: 17rem;
-      padding-right: 0.5rem;
-    }
-
-    @media (max-width: 550px) {
-      width: 10rem;
-      height: 14rem;
-      padding-right: 0.5rem;
-    }
-  }
-
-  &__image2 {
-    width: 16rem;
-    height: 27rem;
-    padding-right: 1rem;
-
-    @media (max-width: 900px) {
-      width: 13rem;
-      height: 23rem;
-      padding-right: 0.5rem;
-    }
-
-    @media (max-width: 550px) {
-      width: 10rem;
-      height: 20rem;
-      padding-right: 0.5rem;
-    }
-  }
-
-  &__image3 {
-    width: 16rem;
-    height: 20rem;
-    padding-right: 1rem;
-
-    @media (max-width: 900px) {
-      width: 12rem;
-      height: 16rem;
-      padding-right: 0.5rem;
-    }
-
-    @media (max-width: 550px) {
-      width: 9rem;
-      height: 13rem;
-      padding-right: 0.5rem;
-    }
-  }
-
-  &__image4 {
-    height: 16rem;
-    width: 18rem;
-    padding-right: 1rem;
-
-    @media (max-width: 900px) {
-      width: 11rem;
-      height: 15rem;
-      padding-right: 0.5rem;
-    }
-
-    @media (max-width: 650px) {
-      display: none;
-    }
-
-    @media (max-width: 550px) {
-      width: 10rem;
-      height: 12rem;
-      display: none;
-    }
-  }
-
-  &__image5 {
-    width: 10rem;
-    height: 20rem;
-
-    @media (max-width: 900px) {
-      width: 5rem;
-      height: 17rem;
-      padding-right: 0.5rem;
-    }
-
-    @media (max-width: 650px) {
-      display: none;
-    }
-
-    @media (max-width: 550px) {
-      width: 4rem;
-      height: 13rem;
-      display: none;
+    @media(min-width:1500px) {
+      min-width: 100%;
     }
   }
 
   &__bottom {
     background-color: $color-black;
     width: 100%;
+    padding-top: 4rem;
+
 
     @media (max-width: 900px) {
-      padding-top: 1rem;
+     
     }
   }
 
   &__container2 {
     display: flex;
+    flex-wrap: wrap;
     max-width: 950px;
     margin: 0 auto;
-    gap: 1rem;
+    padding: 0rem 1rem;
+    justify-content: space-between;
 
     @media (max-width: 900px) {
       justify-content: center;
-      max-width: fit-content;
-      flex-wrap: wrap;
-    }
-
-    @media (max-width: 600px) {
-      flex-wrap: wrap;
     }
   }
 
-  &__process1 {
-    max-width: 21rem;
+  &__process {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 17rem;
     border-bottom: 0.4rem solid transparent;
 
-    @media (man-width: 600px) {
-      max-width: fit-content;
-    }
-
-    @media (max-width: 900px) {
-      padding-left: 1rem;
-      max-width: 20rem;
+    @media (man-width: 900px) {
+      gap: 0.5rem;  
     }
   }
 
-  &__process2 {
-    max-width: 21rem;
-    border-bottom: 0.4rem solid transparent;
-
-    @media (max-width: 900px) {
-      max-width: 20rem;
-    }
-
-    @media (max-width: 600px) {
-      max-width: fit-content;
-    }
-  }
-
-  &__process3 {
-    max-width: 21rem;
-    border-bottom: 0.4rem solid transparent;
-
-    @media (max-width: 900px) {
-      max-width: 20rem;
-    }
-
-    @media (max-width: 600px) {
-      max-width: fit-content;
-    }
-  }
-
-  &__process1:hover {
-    border-bottom: 0.4rem solid $color-primary;
-  }
-
-  &__process2:hover {
-    border-bottom: 0.4rem solid $color-primary;
-  }
-
-  &__process3:hover {
+  &__process:hover {
     border-bottom: 0.4rem solid $color-primary;
   }
 
   &__explore {
-    width: 16rem;
-    height: 5rem;
+    max-width: 16rem;
+    min-height: 5rem;
     color: $color-white;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: $default-font-size;
-    padding: 1rem 0rem;
     line-height: 1.5rem;
+
+    @media (man-width: 600px) {
+     font-size: 0.8rem;
+    }
+
+    @media (max-width: 900px) {
+      max-width: 14rem;
+      font-size: 1rem;
+    }
   }
 
   &__description {
+    min-height: 7rem;
+    max-width: 16rem;
     color: $color-white;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     line-height: 1.5;
     text-align: left;
-    font-size: 1rem;
+    font-size: 0.9rem;
 
     @media (max-width: 600px) {
-      max-width: 18rem;
+      font-size: 0.6rem;
+    }
+
+    @media (max-width: 900px) {
+      font-size: 0.8rem;
     }
   }
 
   &__vector {
-    max-height: 2.5rem;
-    max-width: 2.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
   }
 
   &__button {
+    height: 3rem;
     display: flex;
     cursor: pointer;
     border: none;
     color: $color-primary;
     background-color: transparent;
-    padding: 1.5rem 0rem;
   }
 
   &__arrow {
